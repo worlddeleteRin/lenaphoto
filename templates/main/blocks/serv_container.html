@@ -1,0 +1,100 @@
+{% load static %}
+<div class="serv_container_wrapper">
+    <div class="serv_container">
+        <div class="serv_container_item">
+            <img class="serv_container_item__image"
+            src="{% static 'images/detskaya/1.jpg' %}" alt="">
+            <div class="serv_container_item__bg">
+            </div>
+            <div class="serv_container_item__info">
+                <div class="serv_container_item__info__title">
+                    <span class="">
+                        Детская фотосъёмка 
+                    </span>
+                </div>
+                <div class="serv_container_item__info__desc">
+                   
+                    <div class="serv_container_item__info__button nice_button">
+                        <a href="{% url 'main:index' %}#requestcall_anchor">
+                        Заказать
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="serv_container_item">
+        <img class="serv_container_item__image"
+            src="{% static 'images/family/1.jpg' %}" alt="">
+        <div class="serv_container_item__bg">
+        </div>
+            <div class="serv_container_item__info">
+                <div class="serv_container_item__info__title">
+                    <span>
+                        Семейная фотосессия
+                    </span>
+                </div>
+                <div class="serv_container_item__info__desc">
+                    <div class="serv_container_item__info__button nice_button">
+                        <a href="{% url 'main:index' %}#requestcall_anchor">
+                        Заказать
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="serv_container_item">
+        <img class="serv_container_item__image"
+            src="{% static 'images/beremennost/1.jpg' %}" alt="">
+        <div class="serv_container_item__bg">
+        </div>
+            <div class="serv_container_item__info">
+                <div class="serv_container_item__info__title">
+                    <span>
+                        Фотосессия беременности
+                    </span>
+                </div>
+                <div class="serv_container_item__info__desc">
+                    <div class="serv_container_item__info__button nice_button">
+                        <a href="{% url 'main:index' %}#requestcall_anchor">
+                        Заказать
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="serv_container_item">
+        <img class="serv_container_item__image"
+            src="{% static 'images/portrait/1.jpg' %}" alt="">
+        <div class="serv_container_item__bg">
+        </div>
+            <div class="serv_container_item__info">
+                <div class="serv_container_item__info__title">
+                    <span>
+                        Портретная съёмка
+                    </span>
+                </div>
+                <div class="serv_container_item__info__desc">
+                    <div class="serv_container_item__info__button nice_button">
+                        <a href="{% url 'main:index' %}#requestcall_anchor">
+                        Заказать
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".serv_container_item").hover(function() {
+        
+        $(this).addClass("hover")
+        // var item = $(this).find(".serv_container_item__info__title span").addClass('underline ')
+        console.log(item)
+    }, function() {
+        $(this).removeClass("hover")
+        var item = $(this).find(".serv_container_item__info__title span").attr('class', '')
+    })
+</script>

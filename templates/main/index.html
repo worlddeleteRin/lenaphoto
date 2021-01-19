@@ -1,0 +1,106 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="main_logo_container">
+        <img class="main_logo"
+        src="{% static 'images/logo_main.png' %}" alt="">
+    </div>
+
+
+    {% include './blocks/main_slider.html' %}
+
+    <div class="anchor" id="about_me_anchor">
+    </div>
+    <div class="info_container">
+        <div class="nice_title2 center">
+            <span>
+                ДЕТСКИЙ И СЕМЕЙНЫЙ ФОТОГРАФ В СИМФЕРОПОЛЕ И ПО ВСЕМУ КРЫМУ
+            </span>
+        </div>
+        <div class="info_description">
+            <span>
+                Добро пожаловать на мой сайт! Меня зовут Елена и я обожаю фотографировать📷 С радостью сохраню для Вас самые памятные и яркие моменты в жизни, добавлю в повседневную рутину красок, положительных эмоций и хорошего настроения, ведь фотосессия - это маленькое приключение. 
+                <br>
+            Чтобы вам было легче понять "ваш ли я фотограф?".... предлагаю посмотреть портфолио. Если мои работы откликнуться в вашей душе, ответ очевиден. 
+            </span>
+        </div>
+    </div>
+
+    <div class="anchor" id="services_anchor">
+    </div>
+    <div class="nice_title2 center"
+    style="padding:40 0;">
+        <span>
+            Мои услуги
+        </span>
+    </div>
+
+    {% include './blocks/serv_container.html' %}
+
+
+    <div class="anchor" id="prices_anchor">
+    </div>
+
+    {% include './blocks/prices.html' %}
+
+
+    <div class="anchor" id="requestcall_anchor">
+    </div>
+    {% include './blocks/request_call.html' %}
+
+<div class="anchor" id="contacts_anchor">
+</div>
+    <div class="info_container">
+        <div class="nice_title2 center">
+            <span>
+                Контакты
+            </span>
+        </div>
+        <div class="info_description contact_phone">
+            <a href="tel:+79788705075">
+                +7(978) 870 50 75    
+            </a>
+        </div>
+        <div class="nice_button contact_button">
+                <a href="">
+                    Написать в WhatsApp
+                </a>
+        </div>
+        <div class="nice_button contact_button">
+                <a href="">
+                    Написать в Instagram
+                </a>
+        </div>
+        <div class="nice_button contact_button">
+                <a href="">
+                    Написать в Viber
+                </a>
+        </div>
+    </div>
+
+    <div class="copyright">
+     © 2020 Елена Федоренко — детский, семейный фотограф в Симферополе. Открыта к сотрудничеству и предложениям. <br>
+    <div class="contact_phone2">
+            <a href="tel:+79788705075">
+                +7(978) 870 50 75    
+            </a>
+        </div>
+    г. Симферополь <br> <br>
+    Все представленные фото и видео материалы принадлежат фотографу Елене Федоренко.    
+
+
+    </div>
+
+    {% comment %} {% include './blocks/intro_container.html' %}
+    
+    {% include './blocks/services.html' %}
+
+    {% include './blocks/serv_container.html' %} {% endcomment %}
+
+    {% comment %} {% include './blocks/contacts_container.html' %} {% endcomment %}
+
+    {% comment %} {% include './blocks/request_call.html' %} {% endcomment %}
+
+{% endblock content %}
