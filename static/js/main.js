@@ -92,7 +92,7 @@ $(document).ready(function() {
     autoplayspeed: 1000,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
-    lazyLoad: 'ondemand',
+    lazyLoad: true,
     responsive:{
         0:{
             items: 1
