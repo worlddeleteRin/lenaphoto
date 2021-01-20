@@ -1227,16 +1227,20 @@ html {
   text-align: center;
 }
 
+.main_logo {
+  max-width: 300px;
+}
+
 .main_slider {
   padding: 30 0;
 }
 
 .slider_item {
-  height: 400px;
+  height: 450px;
 }
 .slider_item img {
   object-fit: cover;
-  height: 400px;
+  height: 450px;
 }
 
 .info_container {
