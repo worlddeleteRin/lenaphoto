@@ -14,9 +14,10 @@ from .viberbot import *
 # Create your views here.
 
 def index(request):
+    categories = Category.objects.all()
     template = 'main/index.html'
     context = {
-        
+        'categories': categories
     }
     return  render(request, template, context)
 
